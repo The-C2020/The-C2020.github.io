@@ -1,0 +1,320 @@
+ul {
+	display: flex;
+	min-height: 500px;
+	height: 100vh;
+	margin: 0;
+	gap: 10px;
+	padding: 30px 25px;
+	overflow: hidden;
+	list-style-type: none;
+	width: 100%;
+	min-width: 100%;
+	flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+	ul {
+		flex-direction: row;
+	}
+}
+
+@media (max-width: 544px) {
+	ul {
+		height: 120vh;
+		padding: 0;
+	}
+}
+
+li {
+	flex: 1;
+	display: flex;
+	align-items: stretch;
+	cursor: pointer;
+	color: #fff;
+	line-height: 24px;
+	font-size: 16px;
+	transition: all 0.35s ease;
+	position: relative;
+	background-size: 7rem;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* overflow: hidden; */
+}
+
+li:hover::before {
+	background: rgba(15, 15, 15, 0.3);
+}
+
+li::before {
+	content: "";
+	position: absolute;
+	border-radius: 5px;
+	z-index: 20;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.35s ease;
+	/* background: rgba(15, 15, 15, 0.5); */
+}
+
+li.active {
+	flex: 6;
+	cursor: default;
+	background-size: 30rem;
+}
+
+li.active::before {
+	background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #111111 100%);
+}
+
+.element h2 {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+@media only screen and (min-width: 704px) {
+	.element h2 {
+		font-size: 48px;
+		line-height: 48px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.element h2 {
+		font-size: 64px;
+		line-height: 64px;
+	}
+}
+
+.accordion-element h3 {
+	font-weight: bold;
+	white-space: nowrap;
+	position: absolute;
+	z-index: 30;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	transition: top 0.35s, opacity 0.15s;
+	transform-origin: 0 0;
+	font-size: 24px;
+	transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.active h3 {
+	opacity: 0;
+	top: 200%;
+}
+
+@media only screen and (min-width: 1200px) {
+	.accordion-element h3 {
+		top: 100%;
+		left: 50%;
+		font-size: 32px;
+		transform: translate(-10px, -50%) rotate(-90deg);
+	}
+}
+
+.element {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-rows: min-content;
+	grid-gap: 24px;
+}
+.element-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+}
+
+.element-grid-entry {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.15s linear;
+	border-radius: 5px;
+}
+.youtube-entry:hover {
+	background-color: rgba(207, 107, 107, 0.75);
+	transform: scale(1.1);
+}
+.twitch-entry:hover {
+	background-color: rgba(141, 149, 235, 0.75);
+	transform: scale(1.1);
+}
+
+.element-grid-entry:link,
+.element-grid-entry:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+.element-grid-entry img {
+	border-radius: 50%;
+}
+
+@media (max-width: 544px) {
+	.element-grid-entry img {
+		width: 60px;
+	}
+}
+
+.element-img {
+	border-radius: 5px;
+}
+
+/* SPECIAL COLORS FOR LOGOS */
+/* DISCORD */
+#discord::before {
+	background: rgba(88, 101, 242, 0.5);
+}
+
+#discord.active::before {
+	background: rgba(88, 101, 242, 0.5);
+}
+/* YOUTUBE */
+#youtube::before {
+	background: rgba(250, 0, 0, 0.5);
+}
+
+#youtube.active::before {
+	background: rgba(250, 0, 0, 0.5);
+}
+/* TWITCH */
+#twitch::before {
+	background: rgba(145, 70, 255, 0.5);
+}
+
+#twitch.active::before {
+	background: rgba(145, 70, 255, 0.5);
+}
+/* SPOTIFY */
+#spotify::before {
+	background: rgba(30, 215, 96, 0.5);
+}
+
+#spotify.active::before {
+	background: rgba(30, 215, 96, 0.5);
+}
+/* INSTAGRAM */
+#instagram::before {
+	background: radial-gradient(
+		circle at 30% 107%,
+		rgba(253, 244, 151, 0.5) 0%,
+		rgba(253, 244, 151, 0.5) 5%,
+		rgba(253, 89, 73, 0.5) 45%,
+		rgba(214, 36, 159, 0.5) 60%,
+		rgba(40, 90, 235, 0.5) 90%
+	);
+}
+
+#instagram.active::before {
+	background: radial-gradient(
+		circle at 30% 107%,
+		rgba(253, 244, 151, 0.5) 0%,
+		rgba(253, 244, 151, 0.5) 5%,
+		rgba(253, 89, 73, 0.5) 45%,
+		rgba(214, 36, 159, 0.5) 60%,
+		rgba(40, 90, 235, 0.5) 90%
+	);
+}
+/* TIKTOK */
+#tiktok::before {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#tiktok.active::before {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 1200px) {
+	ul {
+		height: initial;
+	}
+	li:hover::before {
+		transform: translateY(-10px);
+	}
+	#discord:hover::before {
+		background: rgba(88, 101, 242, 0.842);
+		-webkit-box-shadow: 0px 0px 23px -1px rgba(88, 101, 242, 0.75);
+		box-shadow: 0px 0px 23px -1px rgba(88, 101, 242, 0.75);
+	}
+	#youtube:hover::before {
+		background: rgba(250, 0, 0, 0.75);
+		-webkit-box-shadow: 0px 0px 23px -1px rgba(250, 0, 0, 0.75);
+		box-shadow: 0px 0px 23px -1px rgba(250, 0, 0, 0.75);
+	}
+	#twitch:hover::before {
+		background: rgba(145, 70, 255, 0.75);
+		-webkit-box-shadow: 0px 0px 23px -1px rgba(145, 70, 255, 0.75);
+		box-shadow: 0px 0px 23px -1px rgba(145, 70, 255, 0.75);
+	}
+	#spotify:hover::before {
+		background: rgba(30, 215, 96, 0.75);
+		-webkit-box-shadow: 0px 0px 23px -1px rgba(30, 215, 96, 0.75);
+		box-shadow: 0px 0px 23px -1px rgba(30, 215, 96, 0.75);
+	}
+	#instagram:hover::before {
+		background: radial-gradient(
+			circle at 30% 107%,
+			rgba(253, 244, 151, 0.75) 0%,
+			rgba(253, 244, 151, 0.75) 5%,
+			rgba(253, 89, 73, 0.75) 45%,
+			rgba(214, 36, 159, 0.75) 60%,
+			rgba(40, 90, 235, 0.75) 90%
+		);
+		-webkit-box-shadow: 0px 0px 23px -1px rgba(214, 36, 159, 0.75);
+		box-shadow: 0px 0px 23px -1px rgba(214, 36, 159, 0.75);
+	}
+	#tiktok:hover::before {
+		background: rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.75);
+	}
+}
+
+.element-content {
+	position: relative;
+	z-index: 30;
+	opacity: 0;
+	align-self: flex-end;
+	width: 100%;
+	transition: all 0.35s 0.1s ease-out;
+}
+.active .element-content {
+	opacity: 1;
+}
+.element-content .element-container {
+	position: absolute;
+
+	left: 0;
+	bottom: 0;
+	padding: 20px;
+	opacity: 0;
+	transition: opacity 0.25s ease-out;
+}
+
+.element-content .element-container.no-show {
+	display: none;
+}
+.no-show {
+	display: none;
+}
+
+.active .element-content .element-container {
+	opacity: 1;
+}
+
+.element-link {
+	pointer-events: none;
+	display: block;
+	width: 176px;
+	height: 64px; /* corresponding to height an width of img */
+}
+.active .element-link {
+	pointer-events: all;
+}
