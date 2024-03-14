@@ -1,289 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="img/favicon.ico" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/accordion.css" />
-		<link rel="stylesheet" href="css/queries.css" />
-		<script src="https://embed.twitch.tv/embed/v1.js"></script>
-		<script defer src="index.js"></script>
-		<title>Buben mit Bart</title>
-		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-	</head>
-	<body>
-		<img id="bg-image" src="img/BG_clear.jpg" alt="Background-Image" />
-		<main>
-			<section class="section-hero">
-				<div class="hero">
-					<div class="hero-text-box">
-						<h1>Buben mit Bart</h1>
-						<p class="hero-description">
-							Wir sind drei Buben mit Bärten, die sich gemeinsam entschlossen haben, unsere Leidenschaft - das Zocken - gemeinsam mit euch zu teilen!
-						</p>
-						<div class="hero-btns">
-							<a href="https://discord.gg/eQyKsVqUSg" class="btn btn--full discord margin-right-sm">
-								<div class="discord-box">
-									<img class="hero-img-discord" src="img/discord-mark-white.png" alt="Logo-Discord" /><span>Joined uns auf Discord</span>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="hero-img-box">
-						<picture>
-							<img src="img/bmb_all.jpg" class="hero-img" alt="Buben mit Bart" />
-						</picture>
-					</div>
-				</div>
-			</section>
-			<section class="buben blurred">
-				<div class="container">
-					<span class="subheading">Die Buben im Detail</span>
-					<h2 class="subheading-h2">Wer die Buben eigentlich sind</h2>
-				</div>
-				<div class="container buben-grid">
-					<!-- BUBE 01 -->
-					<div class="buben-text-box">
-						<h3>Puschkin</h3>
-						<div class="buben-card">
-							<div class="card-side card-side-front">
-								<p class="buben-description">
-									Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure
-									you get all the nutrients and vitamins you need, no matter what diet you follow!
-								</p>
-							</div>
-							<div class="card-side card-side-back">
-								<h5>Lieblingsspiele:</h5>
-								<div class="card-games">
-									<img src="img/fav-games-thec/Dark_Souls.jpg" alt="" /><img src="img/fav-games-thec/Dark_souls_3.jpg" alt="" /><img
-										src="img/fav-games-thec/Elden_Ring.jpg"
-										alt=""
-									/><img src="img/fav-games-thec/Sekiro.jpg" alt="" /><img src="img/fav-games-thec/Outer_Wilds.jpg" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/accordion.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script defer src="index.js"></script>
+    <title>Buben mit Bart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <img id="bg-image" src="img/BG_clear.jpg" alt="Background-Image" /> -->
+    <div class="bg-video">
+      <video class="bg-video-content" autoplay muted loop>
+        <source src="vid/Background.mp4" />
+        "Your Browser is not supported
+      </video>
+    </div>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1>Buben mit Bart</h1>
+            <p class="hero-description">
+              Wir sind drei Buben mit Bärten, die sich gemeinsam entschlossen haben, unsere Leidenschaft - das Zocken -
+              gemeinsam mit euch zu teilen!
+            </p>
+            <div class="hero-btns">
+              <a href="https://discord.gg/eQyKsVqUSg" class="btn btn--full discord margin-right-sm">
+                <div class="discord-box">
+                  <img class="hero-img-discord" src="img/discord-mark-white.png" alt="Logo-Discord" /><span
+                    >Joined uns auf Discord</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <img src="img/bmb_all.jpg" class="hero-img" alt="Buben mit Bart" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="buben blurred">
+        <div class="container">
+          <span class="subheading">Die Buben im Detail</span>
+          <h2 class="subheading-h2">Wer die Buben eigentlich sind</h2>
+        </div>
+        <div class="container buben-grid">
+          <!-- BUBE 01 -->
+          <div class="buben-text-box">
+            <h3>Puschkin</h3>
+            <div class="buben-card">
+              <div class="card-side card-side-front">
+                <p class="buben-description">
+                  Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly
+                  meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what
+                  diet you follow!
+                </p>
+              </div>
+              <div class="card-side card-side-back">
+                <h5>Lieblingsspiele:</h5>
+                <div class="card-games">
+                  <a href=""><img src="img/fav-games-thec/Dark_Souls.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Dark_souls_3.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Elden_Ring.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Sekiro.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Outer_Wilds.jpg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<div class="buben-image-box">
-						<img src="img/bmb_puschkin.jpg" class="buben-image" alt="Puschkin-Image" />
-					</div>
+          <div class="buben-image-box">
+            <img src="img/bmb_puschkin.jpg" class="buben-image" alt="Puschkin-Image" />
+          </div>
 
-					<!-- BUBE 02 -->
-					<div class="buben-image-box">
-						<img src="img/bmb_thec.jpg" class="buben-image" alt="The-C-Image" />
-					</div>
-					<div class="buben-text-box">
-						<h3>The-C</h3>
-						<div class="buben-card">
-							<div class="card-side card-side-front">
-								<p class="buben-description">
-									Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure
-									you get all the nutrients and vitamins you need, no matter what diet you follow!
-								</p>
-							</div>
-							<div class="card-side card-side-back">
-								<h5>Lieblingsspiele:</h5>
-								<div class="card-games">
-									<img src="img/fav-games-thec/Dark_Souls.jpg" alt="" /><img src="img/fav-games-thec/Dark_souls_3.jpg" alt="" /><img
-										src="img/fav-games-thec/Elden_Ring.jpg"
-										alt=""
-									/><img src="img/fav-games-thec/Sekiro.jpg" alt="" /><img src="img/fav-games-thec/Outer_Wilds.jpg" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
+          <!-- BUBE 02 -->
+          <div class="buben-image-box">
+            <img src="img/bmb_thec.jpg" class="buben-image" alt="The-C-Image" />
+          </div>
+          <div class="buben-text-box">
+            <h3>The-C</h3>
+            <div class="buben-card">
+              <div class="card-side card-side-front">
+                <p class="buben-description">
+                  Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly
+                  meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what
+                  diet you follow!
+                </p>
+              </div>
+              <div class="card-side card-side-back">
+                <h5>Lieblingsspiele:</h5>
+                <div class="card-games">
+                  <a href=""><img src="img/fav-games-thec/Dark_Souls.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Dark_souls_3.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Elden_Ring.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Sekiro.jpg" alt="" /></a
+                  ><a href=""><img src="img/fav-games-thec/Outer_Wilds.jpg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- BUBE 03 -->
-					<div class="buben-text-box">
-						<h3>Urlaub</h3>
-						<div class="buben-card">
-							<div class="card-side card-side-front">
-								<p class="buben-description">
-									Ich mag´s gerne hart, schaurig, fantasylastig oder bunt wie in Animes. Das sind zumindest meine Präferenzen von Videogames, welche ich in
-									meinen Let´s Plays gemeinsam mit euch ausleben möchte. 😁
-								</p>
-							</div>
-							<div class="card-side card-side-back">
-								<h5>Lieblingsspiele:</h5>
-								<div class="card-games">
-									<img src="img/fav-games-urlaub/Resident_Evil_4.jpg" alt="" /><img src="img/fav-games-urlaub/Dark_Souls.jpg" alt="" /><img
-										src="img/fav-games-urlaub/Elden_Ring.jpg"
-										alt=""
-									/><img src="img/fav-games-urlaub/Mario_Maker_2.jpg" alt="" /><img src="img/fav-games-urlaub/Jedi_Academy.jpg" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="buben-image-box">
-						<img src="img/bmb_Urlaub.jpg" class="buben-image" alt="Urlaub-Image" />
-					</div>
-				</div>
-			</section>
-			<section class="video">
-				<div class="container">
-					<span class="subheading">Schaut doch mal rein</span>
-					<h2 class="subheading-h2">Uns gibt es auf YouTube und Twitch</h2>
-				</div>
-				<div class="buben-grid container">
-					<div class="youtube-embed">
-						<iframe src="https://www.youtube.com/embed?list=UULF-1nOjoi_brNNODFeZVW0UQ"></iframe>
-					</div>
-					<div id="twitch-embed"></div>
-				</div>
-			</section>
-			<section class="links blurred">
-				<div class="container">
-					<span class="subheading">Wo Ihr uns sonst noch finden könnt</span>
-					<h2 class="subheading-h2">Die Buben sind überall</h2>
-				</div>
+          <!-- BUBE 03 -->
+          <div class="buben-text-box">
+            <h3>Urlaub</h3>
+            <div class="buben-card">
+              <div class="card-side card-side-front">
+                <p class="buben-description">
+                  Ich mag´s gerne hart, schaurig, fantasylastig oder bunt wie in Animes. Das sind zumindest meine
+                  Präferenzen von Videogames, welche ich in meinen Let´s Plays gemeinsam mit euch ausleben möchte. 😁
+                </p>
+              </div>
+              <div class="card-side card-side-back">
+                <h5>Lieblingsspiele:</h5>
+                <div class="card-games">
+                  <a href="https://www.youtube.com/watch?v=4LfWKDR7cEw&list=PLyQWwLNxPrNlz8It4l_jk3RU6iRGrYV-S">
+                    <img src="img/fav-games-urlaub/Resident_Evil_4.jpg" alt="" /></a
+                  ><a href="https://www.youtube.com/watch?v=olEfvSwtjU8&list=PLyQWwLNxPrNnTjptqihTF4PrtOiPqLM1K"
+                    ><img src="img/fav-games-urlaub/Dark_Souls_3.jpg" alt="" /></a
+                  ><a href="https://www.youtube.com/watch?v=t_5yA4Kg-N4&list=PLyQWwLNxPrNm3Kn6ekxCpCFVpCRONW1XH"
+                    ><img src="img/fav-games-urlaub/Elden_Ring.jpg" alt=""
+                  /></a>
+                  <a href="https://www.youtube.com/watch?v=WblrR4kDlb0&list=PLyQWwLNxPrNls6I7phKZ7hYrRbZtItH1b"
+                    ><img src="img/fav-games-urlaub/Mario_Maker_2.jpg" alt="" /></a
+                  ><a href="https://www.youtube.com/watch?v=l-HAK6J3ROs&list=PLyQWwLNxPrNmzmEUftu1S8xwZFozLKieC"
+                    ><img src="img/fav-games-urlaub/Jedi_Academy.jpg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buben-image-box">
+            <img src="img/bmb_Urlaub.jpg" class="buben-image" alt="Urlaub-Image" />
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container">
+          <span class="subheading">Schaut doch mal rein</span>
+          <h2 class="subheading-h2">Uns gibt es auf YouTube und Twitch</h2>
+        </div>
+        <div class="buben-grid container">
+          <div class="youtube-embed">
+            <iframe src="https://www.youtube.com/embed?list=UULF-1nOjoi_brNNODFeZVW0UQ"></iframe>
+          </div>
+          <div id="twitch-embed"></div>
+        </div>
+      </section>
+      <section class="links blurred">
+        <div class="container">
+          <span class="subheading">Wo Ihr uns sonst noch finden könnt</span>
+          <h2 class="subheading-h2">Die Buben sind überall</h2>
+        </div>
 
-				<div class="container">
-					<ul class="horizontal-accordion">
-						<li id="discord" role="button" class="accordion-element" style="background-image: url(img/logos/discord.png)">
-							<h3>Discord</h3>
-							<div class="element-content">
-								<div class="element-container no-show">
-									<div class="element">
-										<h2>Discord</h2>
-										<p>
-											Wenn Ihr mit den Buben mit Bart direkt in Kontakt treten wollt, dann schaut gerne auf unserem Discord-Server vorbei. Entdeckt dabei unsere
-											wachsende Community und seid Teil unseres gemeinsamen Abenteuers. Unser Bot mit Bart würde sich sehr freuen, euch dort begüßen zu dürfen!
-										</p>
-										<a href="https://discord.gg/eQyKsVqUSg" target="_blank" class="element-link">
-											<img class="element-img" src="img/logos/discord-join.jpg" width="176" height="64" alt="Join Discord" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li id="youtube" role="button" class="accordion-element" style="background-image: url(img/logos/youtube.png)">
-							<h3>YouTube</h3>
-							<div class="element-content">
-								<div class="element-container no-show">
-									<div class="element">
-										<h2>YouTube</h2>
-										<p>
-											Falls Ihr nicht live dabei sein konntet, was die Buben so alles in ihren Spielen erleben, dann könnt Ihr das natürlich problemlos bei
-											YouTube nachverfolgen! Jeder Bube hat seinen eigenen Kanal, damit ihr auch nicht durcheinander kommt. Vergesst dabei nicht auf dem
-											Hauptkanal vorbeizuschauen, falls wir dort besondere gemeinsame Events hochladen!
-										</p>
-										<div class="element-grid">
-											<a href="https://www.youtube.com/@bubenmitbart" class="element-grid-entry youtube-entry">
-												<img src="img/bmb_all.jpg" alt="YouTube Buben mit Bart alle" width="60" />
-												<p>Buben mit Bart</p>
-											</a>
-											<a href="https://www.youtube.com/channel/UCwrI2f05z_ztzKQYnf0IzEQ" class="element-grid-entry youtube-entry">
-												<img src="img/bmb_puschkin.jpg" alt="YouTube Puschkin" width="60" />
-												<p>Puschkin</p>
-											</a>
-											<a href="https://www.youtube.com/channel/UCU6f-Stq_1iQiHH3RnZU5Xw" class="element-grid-entry youtube-entry">
-												<img src="img/bmb_thec.jpg" alt="YouTube The-C" width="60" />
-												<p>The-C</p>
-											</a>
-											<a href="https://www.youtube.com/@BMB_Urlaub" class="element-grid-entry youtube-entry">
-												<img src="img/bmb_Urlaub.jpg" alt="YouTube Urlaub" width="60" />
-												<p>Urlaub</p>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li id="twitch" role="button" class="accordion-element" style="background-image: url(img/logos/twitch.png)">
-							<h3>Twitch</h3>
-							<div class="element-content">
-								<div class="element-container no-show">
-									<div class="element">
-										<h2>Twitch</h2>
-										<p>
-											Mittendrin statt nur dabei seid Ihr bei unseren Live-Streams auf Twitch. Schaut hier gerne vorbei, falls wir gerade live sind und genießt
-											die verschiedenen Spiele und Kommentare, die wir euch dort präsentieren!
-										</p>
-										<div class="element-grid">
-											<a href="https://www.twitch.tv/puschkin_bmb" class="element-grid-entry twitch-entry">
-												<img src="img/bmb_puschkin.jpg" alt="Twitch Puschkin" width="60" />
-												<p>Puschkin</p>
-											</a>
-											<a href="https://www.twitch.tv/thec_bmb" class="element-grid-entry twitch-entry">
-												<img src="img/bmb_thec.jpg" alt="Twitch The-C" width="60" />
-												<p>The-C</p>
-											</a>
-											<a href="https://www.twitch.tv/bmb_urlaub" class="element-grid-entry twitch-entry">
-												<img src="img/bmb_Urlaub.jpg " width="60" />
-												<p>Urlaub</p>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li id="spotify" role="button" class="accordion-element" style="background-image: url(img/logos/spotify.png)">
-							<h3>Spotify</h3>
-							<div class="element-content">
-								<div class="element-container no-show">
-									<div class="element">
-										<h2>Spotify</h2>
-										<p>
-											Wer gerade nicht zuschauen kann, kann uns natürlich auch jederzeit auf Spotify zuhören! Die 3 Buben quatschen in ihren Podcasts über
-											verschiedenste Themen, meistens über Gaming, Nerdkram, eigene Erfahrungen und und und.
-										</p>
-										<a href="https://open.spotify.com/show/1RXfu6UbyVktYV97qWtp6Y?si=e7c1c877af1b4579" target="_blank" class="element-link">
-											<img class="element-img" src="img/logos/spotify-listen.jpg" width="176" height="64" alt="Listen on Spotify" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li id="instagram" role="button" class="accordion-element" style="background-image: url(img/logos/instagram.png)">
-							<h3>Instagram</h3>
-							<div class="element-content">
-								<div class="element-container no-show">
-									<div class="element">
-										<h2>Instagram</h2>
-										<p>
-											Auf Instagram versorgen wir Euch mit den neuesten Let´s Plays! Hier erfahrt Ihr als erstes, was wir gerade so planen und welche neuen
-											Games wir auf der Agenda haben.
-										</p>
-										<a href="https://www.instagram.com/buben_mit_bart/" target="_blank" class="element-link">
-											<img class="element-img" src="img/logos/join-insta.jpg" width="176" height="64" alt="Join on Instagram" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li id="tiktok" role="button" class="accordion-element" style="background-image: url(img/logos/tiktok.png)">
-							<h3>TikTok</h3>
-							<div class="element-content">
-								<div class="element-container no-show">
-									<div class="element">
-										<h2>TikTok</h2>
-										<p>
-											Auch auf TikTik dürfen die 3 Buben mit Bart natürlich nicht fehlen. Hier gibt es immer mal wieder witzige Videoschnipsel aus unseren
-											verschiedenen Abenteuern.
-										</p>
-										<a href="https://www.tiktok.com/@bubenmitbart" target="_blank" class="element-link">
-											<img class="element-img" src="img/logos/join-tiktok.jpg" width="176" height="64" alt="Join on TikTok" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<footer class="footer">
-				<div class="container">
-					<div class="address-col">
-						<p class="footer-heading">Kontakt</p>
-						<address class="contacts">
-							<p>
-								<a class="footer-link" href="mailto:info@bubenmitbart.de">info@bubenmitbart.de</a>
-							</p>
-						</address>
-					</div>
-				</div>
-			</footer>
-		</main>
-	</body>
+        <div class="container">
+          <ul class="horizontal-accordion">
+            <li
+              id="discord"
+              role="button"
+              class="accordion-element"
+              style="background-image: url(img/logos/discord.png)"
+            >
+              <h3>Discord</h3>
+              <div class="element-content">
+                <div class="element-container no-show">
+                  <div class="element">
+                    <h2>Discord</h2>
+                    <p>
+                      Wenn Ihr mit den Buben mit Bart direkt in Kontakt treten wollt, dann schaut gerne auf unserem
+                      Discord-Server vorbei. Entdeckt dabei unsere wachsende Community und seid Teil unseres gemeinsamen
+                      Abenteuers. Unser Bot mit Bart würde sich sehr freuen, euch dort begüßen zu dürfen!
+                    </p>
+                    <a href="https://discord.gg/eQyKsVqUSg" target="_blank" class="element-link">
+                      <img
+                        class="element-img"
+                        src="img/logos/discord-join.jpg"
+                        width="176"
+                        height="64"
+                        alt="Join Discord"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              id="youtube"
+              role="button"
+              class="accordion-element"
+              style="background-image: url(img/logos/youtube.png)"
+            >
+              <h3>YouTube</h3>
+              <div class="element-content">
+                <div class="element-container no-show">
+                  <div class="element">
+                    <h2>YouTube</h2>
+                    <p>
+                      Falls Ihr nicht live dabei sein konntet, was die Buben so alles in ihren Spielen erleben, dann
+                      könnt Ihr das natürlich problemlos bei YouTube nachverfolgen! Jeder Bube hat seinen eigenen Kanal,
+                      damit ihr auch nicht durcheinander kommt. Vergesst dabei nicht auf dem Hauptkanal vorbeizuschauen,
+                      falls wir dort besondere gemeinsame Events hochladen!
+                    </p>
+                    <div class="element-grid">
+                      <a href="https://www.youtube.com/@bubenmitbart" class="element-grid-entry youtube-entry">
+                        <img src="img/bmb_all.jpg" alt="YouTube Buben mit Bart alle" width="60" />
+                        <p>Buben mit Bart</p>
+                      </a>
+                      <a
+                        href="https://www.youtube.com/channel/UCwrI2f05z_ztzKQYnf0IzEQ"
+                        class="element-grid-entry youtube-entry"
+                      >
+                        <img src="img/bmb_puschkin.jpg" alt="YouTube Puschkin" width="60" />
+                        <p>Puschkin</p>
+                      </a>
+                      <a
+                        href="https://www.youtube.com/channel/UCU6f-Stq_1iQiHH3RnZU5Xw"
+                        class="element-grid-entry youtube-entry"
+                      >
+                        <img src="img/bmb_thec.jpg" alt="YouTube The-C" width="60" />
+                        <p>The-C</p>
+                      </a>
+                      <a href="https://www.youtube.com/@BMB_Urlaub" class="element-grid-entry youtube-entry">
+                        <img src="img/bmb_Urlaub.jpg" alt="YouTube Urlaub" width="60" />
+                        <p>Urlaub</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="twitch" role="button" class="accordion-element" style="background-image: url(img/logos/twitch.png)">
+              <h3>Twitch</h3>
+              <div class="element-content">
+                <div class="element-container no-show">
+                  <div class="element">
+                    <h2>Twitch</h2>
+                    <p>
+                      Mittendrin statt nur dabei seid Ihr bei unseren Live-Streams auf Twitch. Schaut hier gerne vorbei,
+                      falls wir gerade live sind und genießt die verschiedenen Spiele und Kommentare, die wir euch dort
+                      präsentieren!
+                    </p>
+                    <div class="element-grid">
+                      <a href="https://www.twitch.tv/puschkin_bmb" class="element-grid-entry twitch-entry">
+                        <img src="img/bmb_puschkin.jpg" alt="Twitch Puschkin" width="60" />
+                        <p>Puschkin</p>
+                      </a>
+                      <a href="https://www.twitch.tv/thec_bmb" class="element-grid-entry twitch-entry">
+                        <img src="img/bmb_thec.jpg" alt="Twitch The-C" width="60" />
+                        <p>The-C</p>
+                      </a>
+                      <a href="https://www.twitch.tv/bmb_urlaub" class="element-grid-entry twitch-entry">
+                        <img src="img/bmb_Urlaub.jpg " width="60" />
+                        <p>Urlaub</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              id="spotify"
+              role="button"
+              class="accordion-element"
+              style="background-image: url(img/logos/spotify.png)"
+            >
+              <h3>Spotify</h3>
+              <div class="element-content">
+                <div class="element-container no-show">
+                  <div class="element">
+                    <h2>Spotify</h2>
+                    <p>
+                      Wer gerade nicht zuschauen kann, kann uns natürlich auch jederzeit auf Spotify zuhören! Die 3
+                      Buben quatschen in ihren Podcasts über verschiedenste Themen, meistens über Gaming, Nerdkram,
+                      eigene Erfahrungen und und und.
+                    </p>
+                    <a
+                      href="https://open.spotify.com/show/1RXfu6UbyVktYV97qWtp6Y?si=e7c1c877af1b4579"
+                      target="_blank"
+                      class="element-link"
+                    >
+                      <img
+                        class="element-img"
+                        src="img/logos/spotify-listen.jpg"
+                        width="176"
+                        height="64"
+                        alt="Listen on Spotify"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              id="instagram"
+              role="button"
+              class="accordion-element"
+              style="background-image: url(img/logos/instagram.png)"
+            >
+              <h3>Instagram</h3>
+              <div class="element-content">
+                <div class="element-container no-show">
+                  <div class="element">
+                    <h2>Instagram</h2>
+                    <p>
+                      Auf Instagram versorgen wir Euch mit den neuesten Let´s Plays! Hier erfahrt Ihr als erstes, was
+                      wir gerade so planen und welche neuen Games wir auf der Agenda haben.
+                    </p>
+                    <a href="https://www.instagram.com/buben_mit_bart/" target="_blank" class="element-link">
+                      <img
+                        class="element-img"
+                        src="img/logos/join-insta.jpg"
+                        width="176"
+                        height="64"
+                        alt="Join on Instagram"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="tiktok" role="button" class="accordion-element" style="background-image: url(img/logos/tiktok.png)">
+              <h3>TikTok</h3>
+              <div class="element-content">
+                <div class="element-container no-show">
+                  <div class="element">
+                    <h2>TikTok</h2>
+                    <p>
+                      Auch auf TikTik dürfen die 3 Buben mit Bart natürlich nicht fehlen. Hier gibt es immer mal wieder
+                      witzige Videoschnipsel aus unseren verschiedenen Abenteuern.
+                    </p>
+                    <a href="https://www.tiktok.com/@bubenmitbart" target="_blank" class="element-link">
+                      <img
+                        class="element-img"
+                        src="img/logos/join-tiktok.jpg"
+                        width="176"
+                        height="64"
+                        alt="Join on TikTok"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="address-col">
+            <p class="footer-heading">Kontakt</p>
+            <address class="contacts">
+              <p>
+                <a class="footer-link" href="mailto:info@bubenmitbart.de">info@bubenmitbart.de</a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
